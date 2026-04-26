@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #1a1a2e;
+  color: #eee;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 48px 40px;
+  background: #16213e;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  width: 320px;
+}
+
+.clock {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #e94560;
+  margin-bottom: 36px;
+}
+
+.alarm-section {
+  margin-bottom: 24px;
+}
+
+.alarm-section label {
+  display: block;
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+#alarm-time {
+  background: #0f3460;
+  border: 1px solid #e94560;
+  color: #eee;
+  font-size: 1.4rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  outline: none;
+  text-align: center;
+  width: 100%;
+}
+
+.btn {
+  background: #e94560;
+  color: #fff;
+  border: none;
+  padding: 12px 40px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #c73652;
+}
+
+.btn.active {
+  background: #2ecc71;
+}
+
+.btn.active:hover {
+  background: #27ae60;
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+  min-height: 1.2em;
+}
