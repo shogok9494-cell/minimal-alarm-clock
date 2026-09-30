@@ -1,0 +1,12 @@
+{
+  "name": "lark-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Claude から Lark のチャットへ通知を送るための最小ブリッジ",
+  "scripts": {
+    "send": "node src/cli.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=18" }
+}
