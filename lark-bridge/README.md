@@ -47,10 +47,10 @@ cp .env.example .env
 ## 使い方
 
 ```bash
-# .env を読み込んで送信
-set -a && . ./.env && set +a
 npm run send -- "ブリッジ確認OK（$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M')）"
 ```
+
+`.env` があれば自動で読み込む。クラウド環境の環境変数が設定されていればそちらが優先される。
 
 成功すれば `送信成功` と出て、Lark のグループにメッセージが届く。
 

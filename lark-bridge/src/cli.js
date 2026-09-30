@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 import { sendText } from './lark.js';
+import { loadEnvFile } from './env.js';
+
+loadEnvFile();
 
 const text = process.argv.slice(2).join(' ');
 if (!text) {

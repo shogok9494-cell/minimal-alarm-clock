@@ -4,6 +4,9 @@
  * 秘密情報は一切表示せず、「設定あり／未設定」と伏せ字だけを出す。
  */
 import { sendText } from './lark.js';
+import { loadEnvFile } from './env.js';
+
+loadEnvFile();
 
 const url = process.env.LARK_WEBHOOK_URL;
 const secret = process.env.LARK_WEBHOOK_SECRET;
