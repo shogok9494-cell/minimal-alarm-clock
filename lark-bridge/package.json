@@ -6,7 +6,10 @@
   "description": "Claude から Lark のチャットへ通知を送るための最小ブリッジ",
   "scripts": {
     "send": "node src/cli.js",
-    "test": "node --test"
+    "test": "node --test",
+    "doctor": "node src/doctor.js"
   },
-  "engines": { "node": ">=18" }
+  "engines": {
+    "node": ">=18"
+  }
 }
